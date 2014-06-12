@@ -1,0 +1,14 @@
+This sample project contains a helper class for obtaining the thread dump of a remote machine, via JMX
+
+
+basically this is the important line 
+
+ThreadMXBean threadMXBean = ManagementFactory.newPlatformMXBeanProxy(mbsc, 
+																 ManagementFactory.THREAD_MXBEAN_NAME, 
+																 ThreadMXBean.class);	
+																 
+																 
+import the project in eclipse and run Main.java (define the IP and port correctly ) 
+
+
+																 
